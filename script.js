@@ -363,23 +363,28 @@ let products = [
     }
 ];
 
-let availableProduct = products.filter(product=>{
-    return product.inStock;
-});
+
+let totalPrice = products.reduce((sum,product) =>{
+    return sum + (product.inStock ? product.price : 0);
+},0)
+
+console.log(totalPrice);
+
+
+// let availableProduct = products.filter(product=>product.inStock).map(product =>{
+//     return product.price;
+// });
 
 // let availableProductNames = availableProduct.map(product =>{
 //     return product.name;
 // })
 
-let availableProductPrices = availableProduct.map(product =>{
-    return product.price;
-})
 
-let totalPrice = availableProductPrices.reduce((prev,curr)=>{
-    return prev+curr;
-},0)
+// let totalPrice = availableProductPrices.reduce((prev,curr)=>{
+//     return prev+curr;
+// },0)
 
-console.log(totalPrice);
+// console.log(availableProduct);
 
 
 
