@@ -106,3 +106,24 @@ let books = [
     }
 ];
 
+// Using filter to get available books
+// Using map to get the titles of available books
+// Using reduce to get the total number of available books
+// group by year and list the titles of books available in that year
+// get all authors
+// get all genres
+
+// let authors = books.map(book => book.author);
+
+// let genres = books.map(book => book.genres).flat();
+let genres = books.flatMap(book => book.genres);
+
+console.log(genres);
+
+genres.forEach(genre =>{
+    if(!uniqueGenres.includes(genre)){
+        uniqueGenres.push(genre);
+    }
+})
+
+console.log(uniqueGenres);
