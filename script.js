@@ -137,7 +137,7 @@ let cubeNumber = numbers.map(num =>{
 
 // console.log(cubeNumber);
 
-// let numbers = [1,2,3,4,5,6,7,8,9,10];
+// let numbers = [1,2,3,4,5,6,7,8,9,10;
 
 // let sum = numbers.reduce((prev,curr) =>{
 //     return prev * curr;
@@ -385,6 +385,11 @@ console.log(totalPrice);
 // },0)
 
 // console.log(availableProduct);
+
+
+// Real world object data examples
+
+
 
 
 
